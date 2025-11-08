@@ -1,1 +1,6 @@
-.history/
+.pio
+.vscode
+.DS_Store
+Thumbs.db
+secrets.h
+.history
