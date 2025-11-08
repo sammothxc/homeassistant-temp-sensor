@@ -5,28 +5,30 @@
 	(uuid "efacee3f-fca6-497e-aa54-2bd43495c6a9")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Sensor:DHT11"
+		(symbol "DHT11_1"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "U"
-				(at -3.81 6.35 0)
+			(property "Reference" "U2"
+				(at -6.35 1.27 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify right)
 				)
 			)
 			(property "Value" "DHT11"
-				(at 3.81 6.35 0)
+				(at -5.842 -1.27 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify right)
 				)
 			)
-			(property "Footprint" "Sensor:Aosong_DHT11_5.5x12.0_P2.54mm"
+			(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
 				(at 0 -10.16 0)
 				(hide yes)
 				(effects
@@ -71,7 +73,7 @@
 					)
 				)
 			)
-			(symbol "DHT11_0_1"
+			(symbol "DHT11_1_0_1"
 				(rectangle
 					(start -5.08 5.08)
 					(end 5.08 -5.08)
@@ -84,26 +86,7 @@
 					)
 				)
 			)
-			(symbol "DHT11_1_1"
-				(pin no_connect line
-					(at -5.08 0 0)
-					(length 2.54)
-					(hide yes)
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
+			(symbol "DHT11_1_1_1"
 				(pin power_in line
 					(at 0 7.62 270)
 					(length 2.54)
@@ -132,7 +115,7 @@
 							)
 						)
 					)
-					(number "4"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -586,83 +569,6 @@
 		(uuid "975ed256-f702-491e-8682-25d7e1e8ffdd")
 	)
 	(symbol
-		(lib_id "Sensor:DHT11")
-		(at 111.76 82.55 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "39e6e4b7-6f11-4990-8c4a-0f2df22263ec")
-		(property "Reference" "U2"
-			(at 105.41 81.2799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "DHT11"
-			(at 105.41 83.8199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Sensor:Aosong_DHT11_5.5x12.0_P2.54mm"
-			(at 111.76 92.71 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "http://akizukidenshi.com/download/ds/aosong/DHT11.pdf"
-			(at 115.57 76.2 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "3.3V to 5.5V, temperature and humidity module, DHT11"
-			(at 111.76 82.55 0)
-			(hide yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "95d80943-1a26-4bab-826c-c05e5c4e41db")
-		)
-		(pin "4"
-			(uuid "20661380-1b8a-4ba6-9a70-3e6f3a81e902")
-		)
-		(pin "2"
-			(uuid "7cd8f79f-ff4c-475a-805e-e1566076fae8")
-		)
-		(pin "3"
-			(uuid "ca91ccee-5734-4128-908b-0e34abdcb5e2")
-		)
-		(instances
-			(project ""
-				(path "/efacee3f-fca6-497e-aa54-2bd43495c6a9"
-					(reference "U2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "wemos_mini:WeMos_mini")
 		(at 134.62 86.36 0)
 		(unit 1)
@@ -768,6 +674,81 @@
 			(project ""
 				(path "/efacee3f-fca6-497e-aa54-2bd43495c6a9"
 					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "DHT11_1")
+		(lib_id "Sensor:DHT11")
+		(at 111.76 82.55 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bf01abea-5c9e-468b-b005-27d8b7e14588")
+		(property "Reference" "U3"
+			(at 105.41 81.2799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "DHT11"
+			(at 105.41 83.8199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
+			(at 111.76 92.71 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "http://akizukidenshi.com/download/ds/aosong/DHT11.pdf"
+			(at 115.57 76.2 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "3.3V to 5.5V, temperature and humidity module, DHT11"
+			(at 111.76 82.55 0)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c53e342d-d7a4-4e9d-9a75-41dd5bc2dc53")
+		)
+		(pin "3"
+			(uuid "f2d90446-5e44-4ad9-967f-fa1400a03f17")
+		)
+		(pin "2"
+			(uuid "fd681eff-8b8e-43a7-a7f4-b1bfb8a5fda4")
+		)
+		(instances
+			(project ""
+				(path "/efacee3f-fca6-497e-aa54-2bd43495c6a9"
+					(reference "U3")
 					(unit 1)
 				)
 			)
