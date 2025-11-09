@@ -1,0 +1,23 @@
+%TF.GenerationSoftware,KiCad,Pcbnew,9.99.0-4034-gc78f770dea*%
+%TF.CreationDate,2025-11-08T16:58:31-07:00*%
+%TF.ProjectId,homeassistant-temp-sensor-pcb,686f6d65-6173-4736-9973-74616e742d74,rev?*%
+%TF.SameCoordinates,Original*%
+%TF.FileFunction,Profile,NP*%
+%FSLAX46Y46*%
+G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
+G04 Created by KiCad (PCBNEW 9.99.0-4034-gc78f770dea) date 2025-11-08 16:58:31*
+%MOMM*%
+%LPD*%
+G01*
+G04 APERTURE LIST*
+%TA.AperFunction,Profile*%
+%ADD10C,0.050000*%
+%TD*%
+G04 APERTURE END LIST*
+D10*
+X136525000Y-97155000D02*
+X163195000Y-97155000D01*
+X163195000Y-106045000D01*
+X136525000Y-106045000D01*
+X136525000Y-97155000D01*
+M02*
